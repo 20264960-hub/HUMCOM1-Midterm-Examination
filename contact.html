@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+        <nav style="padding-left:35%;">
+            <a href="index.html">Home</a> | 
+            <a href="about.html">About</a> | 
+            <a href="services.html">Services</a> | 
+            <a href="media.html">Media</a> | 
+            <a href="contact.html">Contact</a>
+        </nav>
+</head>
+<body style="background-color:#d8fbff;">
+    <form>
+        <fieldset>
+            <legend>Contact Form</legend>
+            <label for="name" placeholder="Full Name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email" placeholder="Email Address">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="topic">Topic:</label><br>
+            <select id="topic" name="topic" required>
+                <option value="">Select a topic</option>
+                <option value="general">General Inquiry</option>
+                <option value="support">Technical Support</option>
+                <option value="feedback">Feedback</option>
+            </select><br><br>
+
+
+            <form action="https://example.com" method="post">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" cols="40" required></textarea><br><br>
+                <button type="submit">Submit</button>
+            </form>
+        </fieldset>
+    </form>
+</body>
+</html>
